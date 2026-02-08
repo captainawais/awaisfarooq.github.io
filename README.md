@@ -11,7 +11,7 @@ This website is created to showcase my **education, skills, projects, and experi
 - Contact and profile links  
 
 ## 🌐 Live Portfolio
-🔗 https://awaisfarooq.github.io
+🔗https://captainawais.github.io/awaisfarooq.github.io
 
 ## 🛠 Built With
 - HTML  
