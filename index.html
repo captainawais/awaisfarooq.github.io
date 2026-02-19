@@ -4,150 +4,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awais Farooq | Software Engineer & Systems Architect</title>
+    <title>Awais Farooq - Software Engineer</title>
 
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="./input.css">
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
 
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="font-Outfit leading-8 dark:bg-darkTheme dark:text-white">
 
-    <!-- NAVBAR -->
-    <nav class="w-full fixed px-6 py-4 flex items-center justify-between z-50 bg-white/70 backdrop-blur-md dark:bg-darkTheme/70">
-        <h2 class="text-xl font-bold">AWAIS</h2>
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
+        <img src="./assets/header-bg-color.png" class="w-full" />
+    </div>
 
-        <ul class="hidden md:flex items-center gap-8 font-Ovo">
+    <!-- NAVBAR -->
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+
+        <a href="#top">
+            <h2 class="text-2xl font-bold">AWAIS</h2>
+        </a>
+
+        <ul
+            class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/30 dark:bg-transparent">
             <li><a href="#top">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#work">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+
+        <div class="flex items-center gap-4">
+            <button onclick="toggleTheme()">
+                <img src="./assets/moon_icon.png" class="w-5 dark:hidden" />
+                <img src="./assets/sun_icon.png" class="w-5 hidden dark:block" />
+            </button>
+        </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <section id="top" class="h-screen flex flex-col justify-center items-center text-center px-6 gap-6">
+    <div id="top"
+        class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
 
-        <img src="./assets/profile-img.png" class="w-32 rounded-full" alt="Awais">
+        <img src="./assets/profile-img.png" class="rounded-full w-32" />
 
-        <h3 class="text-xl font-Ovo">Hi, I'm Awais Farooq</h3>
+        <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
+            Hi, I'm Awais Farooq
+            <img src="./assets/hand-icon.png" class="w-6 mb-1" />
+        </h3>
 
-        <h1 class="text-4xl sm:text-6xl font-bold max-w-3xl">
+        <h1 class="text-3xl sm:text-6xl lg:text-[60px] font-Ovo">
             Software Engineer & Backend Systems Specialist
         </h1>
 
-        <p class="max-w-2xl text-gray-600 dark:text-white/70">
+        <p class="max-w-2xl mx-auto font-Ovo">
             I design and engineer scalable, transaction-driven software systems focused on backend
             architecture, database integrity, and real-world business automation.
         </p>
 
-        <div class="flex gap-4 mt-4">
-            <a href="#work" class="px-8 py-3 bg-black text-white rounded-full">
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+            <a href="#work"
+                class="px-10 py-2.5 border rounded-full bg-gradient-to-r from-[#2563eb] to-[#1e3a8a] text-white flex items-center gap-2">
                 View Projects
             </a>
+
             <a href="./Awais_Farooq_CV.pdf" download
-                class="px-8 py-3 border border-black rounded-full dark:border-white">
+                class="px-10 py-2.5 rounded-full border border-gray-300 dark:border-white/25 hover:bg-slate-100/70 dark:hover:bg-darkHover flex items-center gap-2 bg-white dark:bg-transparent">
                 Download CV
             </a>
         </div>
-    </section>
+    </div>
 
-    <!-- ABOUT -->
-    <section id="about" class="px-[10%] py-20 text-center">
-        <h2 class="text-4xl font-bold mb-6">About Me</h2>
+    <!-- ABOUT SECTION -->
+    <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
 
-        <p class="max-w-3xl mx-auto text-gray-600 dark:text-white/70">
-            I am a Software Engineer specializing in backend development and system architecture.
-            I have built real-world applications including POS systems, inventory management platforms,
-            secure billing APIs, and transaction processing systems using Django and relational databases.
-        </p>
+        <h4 class="text-center mb-2 text-lg font-Ovo">Introduction</h4>
+        <h2 class="text-center text-5xl font-Ovo">About Me</h2>
 
-        <div class="grid sm:grid-cols-3 gap-6 mt-12">
+        <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
 
-            <div class="border p-6 rounded-xl">
-                <h3 class="font-bold mb-2">Backend Technologies</h3>
-                <p class="text-sm text-gray-600 dark:text-white/70">
-                    Python, Django, REST APIs, Transaction Processing
+            <div class="flex-1 text-center">
+                <p class="mb-10 max-w-2xl font-Ovo mx-auto">
+                    I am a Software Engineer specializing in backend development and system architecture.
+                    I have built real-world applications including POS systems, inventory management platforms,
+                    secure billing APIs, and transaction processing systems using Django and relational databases.
                 </p>
-            </div>
 
-            <div class="border p-6 rounded-xl">
-                <h3 class="font-bold mb-2">Database Systems</h3>
-                <p class="text-sm text-gray-600 dark:text-white/70">
-                    PostgreSQL, MySQL, Normalized Schema Design
-                </p>
-            </div>
+                <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
 
-            <div class="border p-6 rounded-xl">
-                <h3 class="font-bold mb-2">Systems Built</h3>
-                <p class="text-sm text-gray-600 dark:text-white/70">
-                    POS Systems, Inventory Management, Secure Billing Logic
-                </p>
-            </div>
+                    <li
+                        class="border border-gray-300 dark:border-white/30 rounded-xl p-6 hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover/50">
+                        <h3 class="my-4 font-semibold">Backend Technologies</h3>
+                        <p class="text-sm">Python, Django, REST APIs, Transactions</p>
+                    </li>
 
+                    <li
+                        class="border border-gray-300 dark:border-white/30 rounded-xl p-6 hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover/50">
+                        <h3 class="my-4 font-semibold">Database Systems</h3>
+                        <p class="text-sm">PostgreSQL, MySQL, Normalized Schema Design</p>
+                    </li>
+
+                    <li
+                        class="border border-gray-300 dark:border-white/30 rounded-xl p-6 hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover/50">
+                        <h3 class="my-4 font-semibold">Systems Built</h3>
+                        <p class="text-sm">POS Systems, Inventory, Billing Logic</p>
+                    </li>
+
+                </ul>
+            </div>
         </div>
-    </section>
+    </div>
 
     <!-- PROJECTS -->
-    <section id="work" class="px-[10%] py-20 text-center">
-        <h2 class="text-4xl font-bold mb-4">Featured Software Systems</h2>
+    <div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
 
-        <p class="max-w-2xl mx-auto text-gray-600 dark:text-white/70 mb-12">
-            Production-style backend systems developed with secure architecture,
-            relational databases, and real-world transaction handling.
+        <h4 class="text-center mb-2 text-lg font-Ovo">Software Portfolio</h4>
+        <h2 class="text-center text-5xl font-Ovo">Featured Systems</h2>
+
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+            Production-style backend systems developed with secure architecture, relational databases,
+            and real-world transaction handling.
         </p>
 
-        <div class="grid sm:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-            <div class="border p-6 rounded-xl text-left">
-                <h3 class="font-bold text-lg">SGIMS POS System</h3>
-                <p class="text-sm text-gray-600 dark:text-white/70 mt-2">
-                    Django • PostgreSQL • Atomic Transactions • Billing System
-                </p>
+            <div class="border p-6 rounded-xl hover:-translate-y-1 duration-500">
+                <h2 class="font-semibold text-lg">SGIMS POS System</h2>
+                <p class="text-sm text-gray-600">Django • PostgreSQL • Atomic Transactions • Billing</p>
             </div>
 
-            <div class="border p-6 rounded-xl text-left">
-                <h3 class="font-bold text-lg">Inventory Management System</h3>
-                <p class="text-sm text-gray-600 dark:text-white/70 mt-2">
-                    Stock Control • Category Management • Sales Tracking
-                </p>
+            <div class="border p-6 rounded-xl hover:-translate-y-1 duration-500">
+                <h2 class="font-semibold text-lg">Inventory Management System</h2>
+                <p class="text-sm text-gray-600">Stock Control • Category Management • Sales Tracking</p>
             </div>
 
-            <div class="border p-6 rounded-xl text-left">
-                <h3 class="font-bold text-lg">REST Billing API</h3>
-                <p class="text-sm text-gray-600 dark:text-white/70 mt-2">
-                    JSON APIs • Secure Transactions • Data Validation
-                </p>
+            <div class="border p-6 rounded-xl hover:-translate-y-1 duration-500">
+                <h2 class="font-semibold text-lg">REST Billing API</h2>
+                <p class="text-sm text-gray-600">JSON APIs • Secure Transactions • Validation</p>
             </div>
 
-            <div class="border p-6 rounded-xl text-left">
-                <h3 class="font-bold text-lg">Authentication & Role System</h3>
-                <p class="text-sm text-gray-600 dark:text-white/70 mt-2">
-                    Role-Based Access • UUID References • Session Control
-                </p>
+            <div class="border p-6 rounded-xl hover:-translate-y-1 duration-500">
+                <h2 class="font-semibold text-lg">Authentication & Role System</h2>
+                <p class="text-sm text-gray-600">Role Based Access • UUID References • Session Control</p>
             </div>
 
         </div>
-    </section>
+    </div>
 
     <!-- CONTACT -->
-    <section id="contact" class="px-[10%] py-20 text-center">
-        <h2 class="text-4xl font-bold mb-6">Get In Touch</h2>
+    <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 text-center">
 
-        <p class="text-gray-600 dark:text-white/70 mb-8">
-            Interested in collaborating or hiring? Let’s build scalable software systems together.
+        <h2 class="text-4xl font-Ovo">Get In Touch</h2>
+
+        <p class="mt-6">
+            Interested in collaborating or hiring? Let's build scalable software systems together.
         </p>
 
-        <p class="font-semibold">awaisfarooq63100@gmail.com</p>
-    </section>
+        <p class="mt-6 font-semibold">awaisfarooq63100@gmail.com</p>
+    </div>
 
     <!-- FOOTER -->
-    <footer class="text-center py-6 border-t">
-        <p>© 2026 Awais Farooq. All rights reserved.</p>
-    </footer>
+    <div class="text-center border-t mt-10 py-4">
+        <p>© 2026 Awais Farooq. All Rights Reserved.</p>
+    </div>
+
+    <script src="./script.js"></script>
 
 </body>
-
 </html>
+
