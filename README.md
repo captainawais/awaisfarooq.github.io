@@ -1,4 +1,4 @@
-#  Asslam-0-Alikum, I'm Awais Farooq
+#  Asslam-0-Alikum,    I'm Awais Farooq
 
 Welcome to my personal portfolio website 🚀  
 This website is created to showcase my **education, skills, projects, and experience** in one place.
