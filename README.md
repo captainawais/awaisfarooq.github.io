@@ -15,11 +15,13 @@ This website is created to showcase my **education, skills, projects, and experi
 
 ## 🛠 Built With
 - HTML  
-- CSS  
-- JavaScript  
+- CSS  (tailwind) 
+- JavaScript   
 - GitHub Pages
 
 ## 📌 Purpose
 I built this website to present my work professionally and make it easy for anyone to review my profile through a single link.
 
 Thanks for visiting! 😊
+    
+               Software Engineer
